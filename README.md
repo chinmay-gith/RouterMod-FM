@@ -101,7 +101,7 @@ It's a case study in **adaptive reuse**: the mechanical design constraints of a 
 
 | Internal wiring & board stack | Preamp/mixer + RF board detail | Rear panel labeling (MIC IN / AUX IN / POWER / ANT) |
 |:---:|:---:|:---:|
-| ![Internal wiring](routermod-fm-internal.jpg) | ![Board detail](routermod-fm-build.jpg) | ![Rear panel](routermod-fm-assembled.jpg) |
+| ![Internal wiring](images/routermod-fm-internal.jpg) | ![Board detail](images/routermod-fm-build.jpg) | ![Rear panel](images/routermod-fm-assembled.jpg) |
 
 **🎥 Live demo:** a short clip shows the full signal chain running end-to-end — music playing from the laptop is routed into the box's AUX IN, a handheld dynamic mic is spoken into live, and the ABARNA 5-Band Portable Radio (tuned to the transmit frequency) is heard picking up the mixed broadcast in real time, with the top-panel pots being adjusted mid-demo to balance mic gain against music level. Add the clip to the repo (e.g. `demo.mp4`) and link it here, or upload to YouTube/an mp4 link and embed a thumbnail — GitHub READMEs can't autoplay video directly.
 
