@@ -17,32 +17,27 @@ The result is a self-contained broadcast unit that takes two simultaneous audio 
 
 ## 🔬 System Architecture
 
-```text
- ┌──────────────────┐
- │  Laptop / PC      │  Line-level, ~1 Vrms
- │  (3.5mm AUX out)  │──────────────┐
- └──────────────────┘              │
-                                    ▼
- ┌──────────────────┐      ┌───────────────────────┐      ┌────────────────────┐      ┌────────────────────┐
- │ Dynamic Mic       │      │  PREAMP + MIXER STAGE  │      │  TOP-PANEL POTS     │      │  FM TRANSMITTER      │
- │ (µV–mV level,     │─────▶│  CD6283CS-based mixer, │─────▶│  Mic gain, master   │─────▶│  RF oscillator →      │
- │  high-Z input)    │      │  bias/coupling network │      │  vol adjust         │      │  Class-C RF PA →      │
- └──────────────────┘      └───────────────────────┘      └────────────────────┘      │  matching network     │
-                                                                                         └─────────┬──────────┘
-                                                                                                     │
-                                                                                                     ▼
-                                                                                            ┌──────────────────┐
-                                                                                            │     Antenna       │──▶ (VHF, ~88–108 MHz)
-                                                                                            └──────────────────┘
-                                                                                                     │
-                                                                                                     ▼
-                                                                                            ┌──────────────────┐
-                                                                                            │  5-Band FM Radio  │
-                                                                                            │  (demodulator +   │
-                                                                                            │   speaker output) │
-                                                                                            └──────────────────┘
-```
+```mermaid
+flowchart LR
+    MIC["Dynamic Microphone"]
+    AUX["Laptop / PC<br/>3.5 mm AUX"]
 
+    MIX["CD6283CS<br/>PREAMP + MIXER"]
+    CTRL["TOP-PANEL<br/>LEVEL CONTROLS"]
+    TX["FM TRANSMITTER<br/>RF OSCILLATOR + PA"]
+    ANT["ANTENNA"]
+    AIR["RF LINK"]
+    RX["5-Band FM Radio"]
+    SPK["Speaker Output"]
+
+    MIC --> MIX
+    AUX --> MIX
+    MIX --> CTRL
+    CTRL --> TX
+    TX --> ANT
+    ANT --> AIR
+    AIR --> RX
+    RX --> SPK
 ---
 
 ## ⚙️ Signal Chain — Stage by Stage
