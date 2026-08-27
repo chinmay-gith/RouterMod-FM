@@ -1,5 +1,9 @@
 
 
+https://github.com/user-attachments/assets/32d37464-5e72-4f9c-bbb2-1fbea8c93ddc
+
+
+
 # 📡 RouterMod FM
 
 ### *An analog RF broadcast system engineered inside the chassis of a dead Wi-Fi router*
@@ -142,14 +146,6 @@ This makes the project a practical example of **adaptive hardware reuse** — ta
 | ![Internal wiring](images/routermod-fm-internal.jpg) | ![Board detail](images/routermod-fm-build.jpg) | ![Completed enclosure](images/routermod-fm-assembled.jpg) |
 
 ---
-
-## 🎥 Live Demonstration
-
-
-https://github.com/user-attachments/assets/53b27a3f-3f40-4c68-8e62-1a472f4ca77b
-
-
-A working demonstration shows the complete analog signal chain operating end-to-end.
 
 The demonstration includes:
 
