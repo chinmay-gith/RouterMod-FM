@@ -145,6 +145,10 @@ This makes the project a practical example of **adaptive hardware reuse** — ta
 
 ## 🎥 Live Demonstration
 
+
+https://github.com/user-attachments/assets/53b27a3f-3f40-4c68-8e62-1a472f4ca77b
+
+
 A working demonstration shows the complete analog signal chain operating end-to-end.
 
 The demonstration includes:
